@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Career Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>🚀 AI Career</h2>
+
+        <input id="name" placeholder="Full Name">
+        <input id="education" placeholder="Education">
+        <input id="role" placeholder="Target Role">
+        <input id="location" placeholder="Location">
+        <input id="skills" placeholder="Skills (comma separated)">
+        <textarea id="experience" placeholder="Experience"></textarea>
+
+        <button onclick="generateResume()">Generate Resume</button>
+        <button onclick="generateInterview()">Generate Interview</button>
+        <button onclick="searchJobs()">Search Jobs</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <div class="card">
+            <h3>📄 Resume</h3>
+            <div id="resumeBox" class="content-box"></div>
+        </div>
+
+        <div class="card">
+            <h3>🎤 Interview Questions</h3>
+            <div id="interviewBox" class="content-box"></div>
+        </div>
+
+        <div class="card">
+            <h3>💼 Job Results</h3>
+            <div id="jobsBox" class="content-box"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
